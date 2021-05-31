@@ -19,13 +19,19 @@ class TodoForm extends React.Component {
         this.props.addItem(this.state.input);
     }
 
+    handleClear = () => {
+        this.props.clearCompleted()
+    }
+
     render() {
-        console.log(this.state.input)
         return(
-            <form onSubmit={this.handleSubmit}>
-                <input onChange={this.handleChange}/>
-                <button>Add</button>
-            </form>
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <input onChange={this.handleChange}/>
+                    <button>Add</button>
+                </form>
+                <button onClick={this.handleClear}>Clear Completed</button>
+            </div>
         )
     }
 }

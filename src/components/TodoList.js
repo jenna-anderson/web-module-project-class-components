@@ -5,9 +5,10 @@ import React from 'react'
 import Todo from './Todo'
 
 const TodoList = props => {
+
     return(
         props.todoData.map(item => (
-            <Todo key={item.id} item={item} />
+            <Todo key={item.id} item={item} toggleItem={props.toggleItem}/>
         ))
     )
 }

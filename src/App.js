@@ -36,7 +36,7 @@ class App extends React.Component {
 
   clearCompleted = () => {
     const newTodoData = this.state.todoData.filter(item => {
-      return(item.purchased === false)
+      return(item.completed === false)
     })
     this.setState({
       todoData: newTodoData

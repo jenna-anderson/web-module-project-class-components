@@ -7,9 +7,11 @@ import Todo from './Todo'
 const TodoList = props => {
 
     return(
-        props.todoData.map(item => (
-            <Todo key={item.id} item={item} toggleItem={props.toggleItem}/>
-        ))
+        <div className='taskContainer'>
+            {props.todoData.map(item => (
+                <Todo key={item.id} item={item} toggleItem={props.toggleItem}/>
+            ))}
+        </div>
     )
 }
 

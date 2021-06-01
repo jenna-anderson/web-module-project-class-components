@@ -1,0 +1,54 @@
+.item.completed {
+    text-decoration: line-through;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-image: url('https://images.unsplash.com/photo-1523634921619-37ce98c1877f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h2{
+    font-size: 2.5em;
+    align-self: flex-start;
+}
+
+.taskContainer {
+    box-shadow: 0px 0px 5px 2px #2d2d2d8f;
+    padding: 2%;
+    width: 50%;
+    margin: 2%;
+    background-color:#c0bfbd8f;
+}
+
+.task {
+    padding: 2%;
+    font-size: 1.4em;
+}
+
+.formContainer {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formContainer form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 66%;
+}
+
+button {
+    border: none;
+    background-color: #5a534fc7;
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+}
